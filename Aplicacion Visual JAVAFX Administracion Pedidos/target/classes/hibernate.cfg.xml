@@ -1,0 +1,26 @@
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Configuración de la conexión a la base de datos SQLite -->
+        <property name="hibernate.connection.driver_class">org.sqlite.JDBC</property>
+        <property name="hibernate.connection.url">jdbc:sqlite:./src/main/resources/HDB.db</property>
+
+        <!-- Propiedad para crear automáticamente las tablas -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+
+        <!-- Ruta de las clases mapeadas -->
+        <mapping class="project.entidades.DescuentoEntidad"/>
+        <mapping class="project.entidades.DetallePedidoEntidad"/>
+        <mapping class="project.entidades.EstadoPedidoEntidad"/>
+        <mapping class="project.entidades.InsumoEntidad"/>
+        <mapping class="project.entidades.InsumoXProductoEntidad"/>
+        <mapping class="project.entidades.PedidoEntidad"/>
+        <mapping class="project.entidades.ProductoEntidad"/>
+        <mapping class="project.entidades.TamanioEntidad"/>
+        <mapping class="project.entidades.TipoProductoEntidad"/>
+        <!-- Agrega aquí las clases mapeadas adicionales -->
+
+    </session-factory>
+</hibernate-configuration>

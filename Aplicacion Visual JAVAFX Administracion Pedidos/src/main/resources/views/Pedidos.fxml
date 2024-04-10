@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="484.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers.PedidosController">
+   <children>
+      <TableView fx:id="pedidosTable" layoutX="42.0" layoutY="168.0" onMouseClicked="#callPedido" prefHeight="282.0" prefWidth="592.0">
+        <columns>
+          <TableColumn fx:id="numeroPedido" prefWidth="75.0" text="Numero" />
+            <TableColumn fx:id="fechaPedido" prefWidth="75.0" text="Fecha" />
+          <TableColumn fx:id="compradorPedido" prefWidth="75.0" text="Comprador" />
+            <TableColumn fx:id="estadoPedido" prefWidth="75.0" text="Estado" />
+            <TableColumn fx:id="totalPedido" prefWidth="75.0" text="Total" />
+        </columns>
+      </TableView>
+      <Label layoutX="300.0" layoutY="6.0" prefHeight="47.0" prefWidth="76.0" text="PEDIDOS" textAlignment="CENTER">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="estados" layoutX="42.0" layoutY="112.0" prefWidth="150.0" promptText="Todos" />
+      <Label layoutX="42.0" layoutY="81.0" prefHeight="31.0" prefWidth="102.0" text="Estado">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="455.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.controllers.PedidoController">
+<children>
+   <Label fx:id="titleLabel" layoutX="241.0" layoutY="24.0" prefHeight="27.0" prefWidth="223.0" text="Label">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Label>
+   <Label fx:id="compradorId" layoutX="14.0" layoutY="55.0" prefHeight="17.0" prefWidth="183.0" />
+   <Label layoutX="100.0" layoutY="55.0" prefHeight="17.0" prefWidth="200.0" />
+   <Label fx:id="fechaInicioId" layoutX="14.0" layoutY="85.0" prefHeight="17.0" prefWidth="216.0" />
+   <Label layoutX="125.0" layoutY="85.0" prefHeight="17.0" prefWidth="200.0" />
+   <Label fx:id="fechaFinId" layoutX="12.0" layoutY="145.0" prefHeight="17.0" prefWidth="208.0" />
+   <Label layoutX="105.0" layoutY="115.0" prefHeight="17.0" prefWidth="200.0" />
+   <Label fx:id="fechaEspectativaId" layoutX="12.0" layoutY="115.0" prefHeight="17.0" prefWidth="216.0" />
+   <Label layoutX="167.0" layoutY="145.0" prefHeight="17.0" prefWidth="200.0" />
+   <Label layoutX="14.0" layoutY="175.0" text="Productos:" />
+   <TableView fx:id="productosTable" layoutX="14.0" layoutY="202.0" prefHeight="152.0" prefWidth="612.0">
+      <columns>
+         <TableColumn fx:id="productoColumn" prefWidth="150.0" text="Producto" />
+         <TableColumn fx:id="cantidadColumn" prefWidth="75.0" text="Cantidad" />
+         <TableColumn fx:id="precioColumn" prefWidth="92.0" text="Precio Unitario" />
+         <TableColumn fx:id="totalColumn" prefWidth="58.0" text="Total" />
+      </columns>
+      <items>
+         <!-- Aquí irían los elementos de la tabla -->
+      </items>
+   </TableView>
+   <Label fx:id="totalPedidoId" layoutX="14.0" layoutY="374.0" prefHeight="17.0" prefWidth="160.0" />
+   <Label layoutX="125.0" layoutY="374.0" prefHeight="17.0" prefWidth="200.0" />
+</children>
+</AnchorPane>
