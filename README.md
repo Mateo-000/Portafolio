@@ -6,3 +6,6 @@ Adjunto este README se encuentran capturas representativas de las aplicaciones w
 
 
 ![api get](https://github.com/Mateo-000/Portafolio/blob/6cc20ab2f80a71809a0d5566e0494e11469c7443/Aplicacion%20Web%20Articulos/imagenes/API%20GET.png)
+
+![image](https://github.com/Mateo-000/Portafolio/assets/165955339/ddc74682-7bbe-47d1-838d-70d3b41b6454)
+
